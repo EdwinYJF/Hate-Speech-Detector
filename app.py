@@ -8,7 +8,7 @@ import types
 if not hasattr(torch, 'classes'):
     torch.classes = types.SimpleNamespace()
 
-model_name = "hate-speech-distilroberta"
+model_name = "JunFai/hate-speech-detector"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
 model.eval()
